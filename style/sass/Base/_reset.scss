@@ -1,5 +1,4 @@
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap");
 html,
 body,
 p,
@@ -26,7 +25,6 @@ h6 {
   margin: 0;
   padding: 0;
 }
-
 h1,
 h2,
 h3,
@@ -36,45 +34,35 @@ h6 {
   font-size: 100%;
   font-weight: normal;
 }
-
 ul {
   list-style: none;
 }
-
 button,
 input,
 select {
   margin: 0;
 }
-
 html {
   box-sizing: border-box;
 }
-
 *,
 *::before,
 *::after {
   box-sizing: inherit;
 }
-
 img,
 video {
   height: auto;
   max-width: 100%;
 }
-
 iframe {
   border: 0;
 }
-
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
 td,
 th {
   padding: 0;
 }
-
-/*# sourceMappingURL=style.css.map */

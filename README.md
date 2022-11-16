@@ -5,3 +5,4 @@
 
 ## Prefix `style/sass/output.css` to style/style.css
 `npm run prefix`
+>Automatic render each save thankfull --watch

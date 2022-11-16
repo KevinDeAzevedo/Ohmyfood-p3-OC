@@ -1,7 +1,82 @@
-body {
-  background-color: #fefefe;
-  -webkit-box-shadow: 2px 2px 5px red;
-          box-shadow: 2px 2px 5px red;
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap");
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
 }
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNhc3MvbWFpbi5zYXNzIiwic2Fzcy9vdXRwdXQvc3R5bGUuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUVBO0VBQ0MseUJBSFU7RUFJVixtQ0FBQTtVQUFBLDJCQUFBO0FDREQiLCJmaWxlIjoic3R5bGUuY3NzIn0= */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select {
+  margin: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNhc3MvQmFzZS9fcmVzZXQuc2NzcyIsInNhc3MvQmFzZS9fZm9udHMuc2NzcyIsInNhc3Mvb3V0cHV0L3N0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSwwRUFBQTtBQ0FRLDZHQUFBO0FEQ1I7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0VBdUJFLFNBQUE7RUFDQSxVQUFBO0FFRUY7O0FGQUE7Ozs7OztFQU1FLGVBQUE7RUFDQSxtQkFBQTtBRUdGOztBRkRBO0VBQ0UsZ0JBQUE7QUVJRjs7QUZGQTs7O0VBR0UsU0FBQTtBRUtGOztBRkhBO0VBQ0UsOEJBQUE7VUFBQSxzQkFBQTtBRU1GOztBRkpBOzs7RUFHRSwyQkFBQTtVQUFBLG1CQUFBO0FFT0Y7O0FGTEE7O0VBRUUsWUFBQTtFQUNBLGVBQUE7QUVRRjs7QUZOQTtFQUNFLFNBQUE7QUVTRjs7QUZQQTtFQUNFLHlCQUFBO0VBQ0EsaUJBQUE7QUVVRjs7QUZSQTs7RUFFRSxVQUFBO0FFV0YiLCJmaWxlIjoic3R5bGUuY3NzIn0= */
