@@ -1,0 +1,21 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Openclassrooms project number 3",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass style/sass/main.sass style/output/style.css --watch",
+    "prefix": "postcss ./style/output/style.css --use autoprefixer -d ./style/"
+  },
+  "browserslist": "last 4 versions",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KevinDeAzevedo/Ohmyfood-p3-OC.git"
+  },
+  "author": "Kevin De Azevedo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KevinDeAzevedo/Ohmyfood-p3-OC/issues"
+  },
+  "homepage": "https://github.com/KevinDeAzevedo/Ohmyfood-p3-OC#readme"
+}
