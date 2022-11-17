@@ -1,7 +1,9 @@
+/* --------------------------------- Colors --------------------------------- */
 $primary-color: #9356dc
 $secondary-color: #FF79DA
 $tertiary-color: #99E2D0
 $layout-color: rgb(50%,50%,50%)
+$shadow-color: rgb(50%,50%,50%)
 
 
 @mixin grey-characters-color($color: $layout-color)
@@ -18,3 +20,6 @@ $layout-color: rgb(50%,50%,50%)
 
 @mixin grey-four-background-color($color: $layout-color)
  background-color: darken($color, 30%)
+
+/* ------------------------------- Responsive ------------------------------- */
+$breakpoints: (mobile: 768px, tablet: 992px)
