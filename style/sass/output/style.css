@@ -119,7 +119,7 @@ p.text--bold {
   font-weight: 700;
 }
 p.text--grey {
-  color: #4d4d4d;
+  color: #cdcdcd;
 }
 
 a,
@@ -129,6 +129,27 @@ a:visited {
   height: 100%;
   text-decoration: none;
   color: inherit;
+}
+
+.container, .four, .three, .two, .one {
+  width: 100%;
+  height: 300px;
+}
+
+.one {
+  background-color: white;
+}
+
+.two {
+  background-color: #f3f3f3;
+}
+
+.three {
+  background-color: #d9d9d9;
+}
+
+.four {
+  background-color: #343434;
 }
 
 /*# sourceMappingURL=style.css.map */

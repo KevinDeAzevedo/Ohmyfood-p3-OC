@@ -1,7 +1,20 @@
 $primary-color: #9356dc
 $secondary-color: #FF79DA
 $tertiary-color: #99E2D0
-$black-color: #000
+$layout-color: rgb(50%,50%,50%)
 
-@mixin grey-color($color: $black-color)
+
+@mixin grey-characters-color($color: $layout-color)
  color: lighten($color, 30%)
+
+@mixin grey-one-background-color($color: $layout-color)
+ background-color: lighten($color, 50%) 
+
+@mixin grey-two-background-color($color: $layout-color)
+ background-color: lighten($color, 45%) 
+
+@mixin grey-three-background-color($color: $layout-color)
+ background-color: lighten($color, 35%)
+
+@mixin grey-four-background-color($color: $layout-color)
+ background-color: darken($color, 30%)
