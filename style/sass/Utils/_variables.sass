@@ -1,3 +1,7 @@
 $primary-color: #9356dc
 $secondary-color: #FF79DA
 $tertiary-color: #99E2D0
+$black-color: #000
+
+@mixin grey-color($color: $black-color)
+ color: lighten($color, 30%)
