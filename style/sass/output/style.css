@@ -155,7 +155,7 @@ a:visited {
   padding: 0;
   max-width: 1500px;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .main-container {
     padding: 0 50px;
   }
@@ -204,7 +204,7 @@ header .container {
   padding: 0 50px;
   height: 100%;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   header .container {
     justify-content: flex-end;
   }
@@ -217,7 +217,7 @@ header .container .back-btn {
   position: absolute;
   left: 20px;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   header .container .back-btn {
     left: 50px;
   }
@@ -228,7 +228,7 @@ header .container .back-btn {
   max-width: 1400px;
   background-color: whitesmoke;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .hero {
     border-radius: 0 0 2em 2em;
   }
@@ -241,7 +241,7 @@ header .container .back-btn {
   text-align: center;
   background-color: #e8e8e8;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .hero-ribon {
     width: 50%;
     border-radius: 0 0 1em 1em;
@@ -261,15 +261,13 @@ header .container .back-btn {
 
 .stages {
   padding: 1.8em 1.2em;
-  border: 1px solid red;
 }
 .stages ul {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  border: 1px solid green;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .stages ul {
     flex-direction: row;
     gap: 1.5em;
@@ -306,7 +304,7 @@ header .container .back-btn {
 }
 
 .stages-card {
-  padding: 2em;
+  padding: 1.8em;
   background-color: #f2f2f2;
 }
 .stages-card.active {
