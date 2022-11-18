@@ -1,0 +1,11 @@
+.stages
+  padding: 1.8em 1.2em
+  border: 1px solid red
+  ul
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    border: 1px solid green
+    @media screen and (min-width: map-get($breakpoints, tablet))
+      flex-direction: row
+      gap: 1.5em

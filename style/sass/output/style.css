@@ -30,7 +30,6 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
-  overflow: hidden;
 }
 
 h1,
@@ -117,6 +116,7 @@ h2 {
   font-size: 1.5em;
   line-height: 1.1em;
   font-weight: 700;
+  margin: 0.8em 0;
 }
 h2.stylized {
   font-size: 1.7em;
@@ -133,7 +133,6 @@ p {
   font-size: 1.06em;
   line-height: 1.2em;
   font-weight: 300;
-  margin: 0.8em 0;
 }
 p.text--bold {
   font-weight: 700;
@@ -238,7 +237,7 @@ header .container .back-btn {
 .hero-ribon {
   margin: auto;
   width: 100%;
-  padding: 0.2em;
+  padding: 1em;
   text-align: center;
   background-color: #e8e8e8;
 }
@@ -251,10 +250,30 @@ header .container .back-btn {
 
 .hero-banner {
   text-align: center;
-  padding: 1.5em 2em 4em 2em;
+  padding: 1.5em 2em 3.5em 2em;
 }
 .hero-banner .button {
   margin-top: 1.5em;
+}
+.hero-banner h1, .hero-banner p {
+  margin: 0.8em 0;
+}
+
+.stages {
+  padding: 1.8em 1.2em;
+  border: 1px solid red;
+}
+.stages ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: 1px solid green;
+}
+@media screen and (min-width: 992px) {
+  .stages ul {
+    flex-direction: row;
+    gap: 1.5em;
+  }
 }
 
 .button {
@@ -275,6 +294,23 @@ header .container .back-btn {
   color: white;
   font-weight: 700;
   margin: 0;
+}
+
+.card, .stages-card {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  border-radius: 1.4em;
+  margin-bottom: 1.3em;
+  box-shadow: 0px 7px 10px rgba(74, 74, 74, 0.2);
+}
+
+.stages-card {
+  padding: 2em;
+  background-color: #f2f2f2;
+}
+.stages-card.active {
+  background-color: rgba(147, 86, 220, 0.1);
 }
 
 /*# sourceMappingURL=style.css.map */
