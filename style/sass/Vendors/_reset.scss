@@ -1,5 +1,5 @@
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
-html {
+body {
   scroll-behavior: smooth;
 }
 html,
@@ -27,6 +27,7 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 h1,
 h2,
