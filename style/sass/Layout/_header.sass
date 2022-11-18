@@ -9,10 +9,10 @@ header
   justify-content: center
   align-items: center
   margin: auto
-  max-width: 1400px
+  max-width: 1500px
+  padding: 0 50px
   height: 100%
-  padding: 0 20px
-  @media screen and (min-width: map-get($breakpoints, mobile))
+  @media screen and (min-width: map-get($breakpoints, tablet))
    justify-content: flex-end
   .logo
    width: auto
@@ -20,3 +20,5 @@ header
   .back-btn
    position: absolute
    left: 20px
+   @media screen and (min-width: map-get($breakpoints, tablet))
+    left: 50px

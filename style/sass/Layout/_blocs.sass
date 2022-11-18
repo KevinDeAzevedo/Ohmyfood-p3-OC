@@ -1,22 +1,15 @@
-.container
- width: 100%
- height: 300px
+.main-container
+ margin: 0 auto
+ /* center main content */
+ padding: 0
+ max-width: 1500px
+ @media screen and (min-width: map-get($breakpoints, tablet))
+  padding: 0 50px
 
-.grey-one
- @extend .container
- @include grey-one-background-color
+.hidden
+ display: none
+ 
 
-.grey-two
- @extend .container
- @include grey-two-background-color
-
-.grey-three
- @extend .container
- @include grey-three-background-color
-
-.grey-four
- @extend .container
- @include grey-four-background-color
 
 /* ---------------------------- Test à supprimer ---------------------------- */
 .box
