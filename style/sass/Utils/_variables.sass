@@ -2,24 +2,38 @@
 $primary-color: #9356dc
 $secondary-color: #FF79DA
 $tertiary-color: #99E2D0
-$layout-color: rgb(50%,50%,50%)
+$layout-color: #dedede
+/* default dedede */
 $shadow-color: rgb(50%,50%,50%)
+
+/* --------------------- limit lightness of layout-color -------------------- */
+@mixin computed-layout-color($color: $layout-color, $percent: 10%)
+  @if lightness($color) < 70%
+    background-color: lighten($color, $percent)
+  @else
+    background-color: darken($color, $percent)
+
 
 
 @mixin grey-characters-color($color: $layout-color)
- color: darken($color, 20%)
+  @if lightness($color) > 50%
+    color: darken($color, 70%)
+  @else
+    color: lighten($color, 100%)
 
-@mixin grey-one-background-color($color: $layout-color)
- background-color: lighten($color, 50%) 
+
+/* ---------------------- Define each background color ---------------------- */
+@mixin grey-one-background-color
+  background-color: white
 
 @mixin grey-two-background-color($color: $layout-color)
- background-color: lighten($color, 45%) 
+  @include computed-layout-color($percent: 0%)
 
 @mixin grey-three-background-color($color: $layout-color)
- background-color: lighten($color, 35%)
+  @include computed-layout-color($percent: 10%)
 
 @mixin grey-four-background-color($color: $layout-color)
- background-color: darken($color, 30%)
+  @include computed-layout-color($percent: 70%)
 
 /* ------------------------------- Responsive ------------------------------- */
 $breakpoints: (mobile: 768px, tablet: 992px)

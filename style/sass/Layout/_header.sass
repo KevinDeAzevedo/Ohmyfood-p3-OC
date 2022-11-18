@@ -4,6 +4,7 @@ header
  @include grey-one-background-color
  box-shadow: 0 2px 8px rgb($shadow-color, 0.5)
  .container
+  position: relative
   display: flex
   justify-content: center
   align-items: center
@@ -12,7 +13,10 @@ header
   height: 100%
   padding: 0 20px
   @media screen and (min-width: map-get($breakpoints, mobile))
-   justify-content: flex-start
+   justify-content: flex-end
   .logo
    width: auto
    max-height: 30px
+  .back-btn
+   position: absolute
+   left: 20px
