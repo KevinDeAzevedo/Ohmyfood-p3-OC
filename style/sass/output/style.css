@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap");
 body {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 html,
@@ -273,6 +274,9 @@ header .container .back-btn {
     gap: 1.5em;
   }
 }
+.stages ul li {
+  flex-grow: 1;
+}
 
 .button {
   display: inline-block;
@@ -304,11 +308,36 @@ header .container .back-btn {
 }
 
 .stages-card {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
   padding: 1.8em;
   background-color: #f2f2f2;
 }
+.stages-card i {
+  color: grey;
+  margin-right: 1.5em;
+}
 .stages-card.active {
   background-color: rgba(147, 86, 220, 0.1);
+}
+.stages-card.active i {
+  color: #9356dc;
+}
+.stages-card .number {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 25px;
+  height: 25px;
+  left: -10px;
+  border-radius: 1em;
+  background-color: #9356dc;
 }
 
 /*# sourceMappingURL=style.css.map */
