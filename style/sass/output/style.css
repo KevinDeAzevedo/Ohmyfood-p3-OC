@@ -284,6 +284,48 @@ header .container .back-btn {
   background-color: whitesmoke;
 }
 
+.restaurants-listing {
+  width: 100%;
+  height: auto;
+  display: flex;
+  border: 1px solid red;
+}
+
+.restaurant-card {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: auto;
+  border: 1px solid green;
+}
+
+.image {
+  width: 100%;
+  height: 50%;
+  min-height: 230px;
+  border: 1px solid violet;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border: 2px solid blue;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  width: 100%;
+  height: auto;
+  border: 1px solid red;
+}
+
+.heart {
+  align-self: center;
+}
+
 .button {
   display: inline-block;
   width: auto;
@@ -304,7 +346,7 @@ header .container .back-btn {
   margin: 0;
 }
 
-.card, .restaurant-card, .stages-card {
+.card, .stages-card {
   width: 100%;
   height: auto;
   background-color: white;
@@ -349,47 +391,6 @@ header .container .back-btn {
   left: -10px;
   border-radius: 1em;
   background-color: #9356dc;
-}
-
-.restaurant-card {
-  position: relative;
-}
-.restaurant-card-content {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  border: 1px solid red;
-}
-.restaurant-card .new-status {
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 1em;
-  border: 1px solid red;
-}
-.restaurant-card .image {
-  position: relative;
-  width: 100%;
-  height: 200px;
-  border: 1px solid green;
-}
-.restaurant-card .image img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.restaurant-card .content-specs {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 100%;
-  height: auto;
-  padding: 1.5em 1em;
-  border: 1px solid blue;
-}
-.restaurant-card .content-specs-fav-btn {
-  border: 1px solid red;
 }
 
 /*# sourceMappingURL=style.css.map */
