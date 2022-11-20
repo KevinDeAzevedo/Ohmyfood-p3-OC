@@ -278,6 +278,11 @@ header .container .back-btn {
   flex-grow: 1;
 }
 
+.restaurants {
+  padding: 1.8em 1.2em;
+  background-color: whitesmoke;
+}
+
 .button {
   display: inline-block;
   width: auto;
@@ -298,7 +303,7 @@ header .container .back-btn {
   margin: 0;
 }
 
-.card, .stages-card {
+.card, .restaurant-card, .stages-card {
   width: 100%;
   height: auto;
   background-color: white;
@@ -343,6 +348,42 @@ header .container .back-btn {
   left: -10px;
   border-radius: 1em;
   background-color: #9356dc;
+}
+
+.restaurant-card {
+  position: relative;
+}
+.restaurant-card-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+}
+.restaurant-card .new-status {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1em;
+  border: 1px solid red;
+}
+.restaurant-card .image {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  border: 1px solid green;
+}
+.restaurant-card .image img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.restaurant-card .heart-btn {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 1em;
+  border: 1px solid green;
 }
 
 /*# sourceMappingURL=style.css.map */
