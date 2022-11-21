@@ -273,7 +273,13 @@ header .container .back-btn {
 
 .restaurants {
   padding: 1.8em 2em;
+  border-radius: 0;
   background-color: whitesmoke;
+}
+@media screen and (min-width: 768px) {
+  .restaurants {
+    border-radius: 2em;
+  }
 }
 .restaurants-listing {
   width: 100%;
@@ -327,6 +333,7 @@ header .container .back-btn {
 .restaurant-card-content-description {
   width: 100%;
   height: auto;
+  padding-top: 0.2em;
 }
 .restaurant-card-content-heart {
   padding: 1em;
@@ -340,7 +347,7 @@ header .container .back-btn {
   cursor: pointer;
 }
 .restaurant-card-content button:hover {
-  color: red;
+  color: #9356dc;
 }
 
 .button {

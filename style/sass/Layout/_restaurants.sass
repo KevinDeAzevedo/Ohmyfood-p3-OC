@@ -1,6 +1,9 @@
 .restaurants
   padding: 1.8em 2em
+  border-radius: 0
   @include grey-two-background-color
+  @media screen and (min-width: map-get($breakpoints, tablet))
+    border-radius: 2em
   &-listing
     width: 100%
     height: auto
@@ -39,6 +42,7 @@
     &-description
       width: 100%
       height: auto
+      padding-top: 0.2em
     &-heart
       padding: 1em
     button
@@ -49,4 +53,4 @@
       background-color: transparent
       cursor: pointer
       &:hover
-        color: red
+        color: $primary-color
