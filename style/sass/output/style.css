@@ -279,7 +279,13 @@ header .container .back-btn {
   width: 100%;
   height: auto;
   display: flex;
+  flex-direction: column;
   gap: 10px;
+}
+@media screen and (min-width: 768px) {
+  .restaurants-listing {
+    flex-direction: row;
+  }
 }
 
 .restaurant-card {
@@ -311,7 +317,7 @@ header .container .back-btn {
   height: auto;
 }
 .restaurant-card-content-heart {
-  align-self: center;
+  padding: 1em;
 }
 .restaurant-card-content button {
   padding: 0;

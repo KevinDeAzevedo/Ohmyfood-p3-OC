@@ -5,7 +5,10 @@
     width: 100%
     height: auto
     display: flex
+    flex-direction: column
     gap: 10px
+    @media screen and (min-width: map-get($breakpoints, tablet))
+      flex-direction: row
 
 .restaurant-card
   display: flex
@@ -31,7 +34,7 @@
       width: 100%
       height: auto
     &-heart
-      align-self: center
+      padding: 1em
     button
       padding: 0
       font-size: 1.3em
