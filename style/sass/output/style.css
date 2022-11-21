@@ -143,14 +143,6 @@ p.text--grey {
   color: #434343;
 }
 
-a,
-a:visited {
-  display: inline;
-  width: 100%;
-  height: 100%;
-  color: inherit;
-}
-
 .main-container {
   margin: 0 auto;
   /* center main content */
@@ -283,7 +275,6 @@ header .container .back-btn {
   padding: 1.8em 1.2em;
   background-color: whitesmoke;
 }
-
 .restaurants-listing {
   width: 100%;
   height: auto;
@@ -297,35 +288,41 @@ header .container .back-btn {
   width: 100%;
   height: auto;
 }
-
-.image {
+.restaurant-card-image {
   position: relative;
   width: 100%;
   min-height: 200px;
 }
-.image img {
+.restaurant-card-image img {
   position: absolute;
   object-fit: cover;
   width: 100%;
   height: 100%;
   border-radius: 1.4em 1.4em 0 0;
 }
-
-.content {
+.restaurant-card-content {
   display: flex;
   width: 100%;
   height: 100%;
   padding: 1.2em;
 }
-
-.description {
+.restaurant-card-content-description {
   width: 100%;
   height: auto;
 }
-
-.heart {
-  font-size: 1.5em;
+.restaurant-card-content-heart {
   align-self: center;
+}
+.restaurant-card-content button {
+  padding: 0;
+  font-size: 1.3em;
+  border: 0;
+  color: grey;
+  background-color: transparent;
+  cursor: pointer;
+}
+.restaurant-card-content button:hover {
+  color: red;
 }
 
 .button {
