@@ -254,7 +254,7 @@ header .container .back-btn {
 }
 
 .stages {
-  padding: 1.8em 1.2em;
+  padding: 1.8em 2em;
 }
 .stages ul {
   display: flex;
@@ -272,7 +272,7 @@ header .container .back-btn {
 }
 
 .restaurants {
-  padding: 1.8em 1.2em;
+  padding: 1.8em 2em;
   background-color: whitesmoke;
 }
 .restaurants-listing {
@@ -280,11 +280,13 @@ header .container .back-btn {
   height: auto;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 1em;
 }
 @media screen and (min-width: 768px) {
   .restaurants-listing {
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
@@ -293,6 +295,16 @@ header .container .back-btn {
   flex-direction: column;
   width: 100%;
   height: auto;
+}
+@media screen and (min-width: 768px) {
+  .restaurant-card {
+    width: 48%;
+  }
+}
+@media screen and (min-width: 990px) {
+  .restaurant-card {
+    width: 23%;
+  }
 }
 .restaurant-card-image {
   position: relative;
