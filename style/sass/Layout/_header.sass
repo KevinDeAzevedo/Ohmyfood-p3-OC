@@ -7,20 +7,24 @@ header
  .container
   position: relative
   display: flex
-  justify-content: center
+  justify-content: flex-start
   align-items: center
   margin: auto
   max-width: 1500px
-  padding: 0 50px
+  width: 100%
   height: 100%
+  padding: 0 20px
   @media screen and (min-width: map-get($breakpoints, tablet))
-   justify-content: flex-end
-  .logo
-   width: auto
+   padding: 0 50px
+  & .logo
+   position: absolute
+   left: 0
+   right: 0
+   margin-left: auto
+   margin-right: auto
+   width: 50%
    max-height: 30px
    color: black
-  .back-btn
-   position: absolute
-   left: 20px
-   @media screen and (min-width: map-get($breakpoints, tablet))
-    left: 50px
+  & .back-btn
+   font-size: 1.3em
+   cursor: pointer
