@@ -119,9 +119,16 @@ h2 {
   font-weight: 700;
   margin: 0.8em 0;
 }
-h2.stylized {
+
+.stylized {
   font-size: 1.7em;
   font-family: "Shrikhand", sans-serif;
+}
+
+.uppercased {
+  text-transform: uppercase;
+  font-size: 1.06em;
+  font-weight: 300;
 }
 
 h3 {
@@ -341,17 +348,6 @@ header .container .back-btn {
 .restaurant-card-content-heart {
   padding: 1em;
 }
-.restaurant-card-content button {
-  padding: 0;
-  font-size: 1.3em;
-  border: 0;
-  color: grey;
-  background-color: transparent;
-  cursor: pointer;
-}
-.restaurant-card-content button:hover {
-  color: #9356dc;
-}
 
 .menu-container {
   border-radius: 2em 2em 0 0;
@@ -370,6 +366,11 @@ header .container .back-btn {
   max-width: 300px;
   margin: 1.8em;
 }
+.menu-container-title {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 2em;
+}
 
 .menu-listing {
   width: 100%;
@@ -379,6 +380,11 @@ header .container .back-btn {
     margin: auto;
     width: 80%;
   }
+}
+.menu-listing h2 {
+  padding-bottom: 0.4em;
+  border-bottom: 3px solid #99E2D0;
+  width: 30px;
 }
 
 .menu {
@@ -393,16 +399,16 @@ header .container .back-btn {
 .menu:hover .vert {
   width: 100px;
 }
-.menu-description h3, .menu-description p {
+.menu h3, .menu p {
   width: 100%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.menu-description h3 {
+.menu h3 {
   padding: 1em 0 0 1em;
 }
-.menu-description p {
+.menu p {
   padding: 0em 0 1em 1em;
 }
 
@@ -504,6 +510,18 @@ header .container .back-btn {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+
+.heart-button {
+  padding: 0;
+  font-size: 1.3em;
+  border: 0;
+  color: grey;
+  background-color: transparent;
+  cursor: pointer;
+}
+.heart-button:hover {
+  color: #9356dc;
 }
 
 .card, .stages-card {
