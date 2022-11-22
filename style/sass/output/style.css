@@ -336,6 +336,16 @@ header .container .back-btn {
   height: 100%;
   border-radius: 1.4em 1.4em 0 0;
 }
+.restaurant-card-image .label {
+  padding: 0.6em 0.9em;
+  margin: 1em;
+  right: 0;
+  background-color: #99E2D0;
+  position: absolute;
+  border-radius: 0.2em;
+  color: black;
+  font-size: 0.8em;
+}
 .restaurant-card-content {
   display: flex;
   width: 100%;
@@ -410,6 +420,7 @@ header .container .back-btn {
   display: flex;
   margin-bottom: 1em;
   cursor: pointer;
+  overflow: hidden;
 }
 .menu:active .menu-checkmark {
   width: 80px;
