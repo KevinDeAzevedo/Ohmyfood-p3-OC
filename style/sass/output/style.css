@@ -396,6 +396,7 @@ header .container .back-btn {
 }
 .menu-container-title {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   padding-right: 2em;
 }
@@ -548,18 +549,24 @@ header .container .back-btn {
 }
 
 .heart-button {
-  padding: 0.01em;
+  max-height: 25px;
+  padding: 0;
   font-size: 1.3em;
   border: 0;
-  color: black;
-  background-color: transparent;
+  background: black;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   cursor: pointer;
+}
+.heart-button:hover {
+  background: linear-gradient(#9356dc, #FF79DA);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .heart-button .fa-solid {
   font-weight: 100;
 }
 .heart-button:hover .fa-solid {
-  color: #9356dc;
   font-weight: 900;
 }
 
