@@ -1,0 +1,46 @@
+.menu-listing
+ width: 100%
+ padding: 1em
+ @media screen and (min-width: map-get($breakpoints, tablet))
+  margin: auto
+  width: 80%
+ 
+.menu
+ width: 100%
+ display: flex
+ margin-bottom: 1em  
+ cursor: pointer
+ &:active .vert
+  width: 100px
+ &:hover .vert
+  width: 100px
+ &-description
+  h3,p
+   width: 100%
+   white-space: nowrap
+   overflow: hidden
+   text-overflow: ellipsis
+  h3
+   padding: 1em 0 0 1em
+  p
+   padding: 0em 0 1em 1em
+
+.crop
+  width: 100%
+  white-space: nowrap
+  overflow: hidden
+  text-overflow: ellipsis
+
+.bleu
+ display: flex
+ align-items: flex-end
+ width: auto
+ p
+  padding: 1em
+
+.vert
+ display: flex
+ justify-content: center
+ align-items: center
+ width: 0px
+ overflow: hidden
