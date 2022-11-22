@@ -189,7 +189,8 @@ p.text--grey {
 }
 
 header {
-  position: relative;
+  position: fixed;
+  z-index: 99;
   width: 100%;
   height: 60px;
   background-color: white;
@@ -228,6 +229,7 @@ header .container .back-btn {
 
 .hero {
   margin: auto;
+  padding-top: 60px;
   max-width: 1400px;
   background-color: whitesmoke;
 }
@@ -347,6 +349,22 @@ header .container .back-btn {
 }
 .restaurant-card-content-heart {
   padding: 1em;
+}
+
+.banner {
+  height: 280px;
+}
+.banner-image {
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  height: 320px;
+  margin: auto;
+}
+.banner-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .menu-container {
