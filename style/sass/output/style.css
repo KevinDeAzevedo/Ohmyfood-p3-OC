@@ -411,11 +411,11 @@ header .container .back-btn {
   margin-bottom: 1em;
   cursor: pointer;
 }
-.menu:active .vert {
-  width: 100px;
+.menu:active .menu-checkmark {
+  width: 80px;
 }
-.menu:hover .vert {
-  width: 100px;
+.menu:hover .menu-checkmark {
+  width: 80px;
 }
 .menu h3, .menu p {
   width: 100%;
@@ -429,29 +429,35 @@ header .container .back-btn {
 .menu p {
   padding: 0em 0 1em 1em;
 }
+.menu-price {
+  display: flex;
+  align-items: flex-end;
+  width: auto;
+}
+.menu-price p {
+  padding: 1em;
+}
+.menu-checkmark {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 0px;
+  border-radius: 0 1.4em 1.4em 0;
+  background-color: #99E2D0;
+  color: white;
+  overflow: hidden;
+}
+.menu-checkmark p {
+  font-size: 1.6em;
+  padding: 0;
+  transform: rotate(0deg);
+}
 
 .crop {
   width: 100%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-.bleu {
-  display: flex;
-  align-items: flex-end;
-  width: auto;
-}
-.bleu p {
-  padding: 1em;
-}
-
-.vert {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 0px;
-  overflow: hidden;
 }
 
 .footer {
