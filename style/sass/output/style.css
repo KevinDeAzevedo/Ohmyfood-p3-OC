@@ -641,14 +641,40 @@ header .container .back-btn {
   background: linear-gradient(#9356dc, #FF79DA);
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  animation: pop 500ms ease-in-out;
 }
 .heart-button .fa-solid {
   font-weight: 100;
 }
 .heart-button:hover .fa-solid {
   font-weight: 900;
+  animation: pop 500ms ease-in-out;
 }
 
+@keyframes pop {
+  0% {
+    transform: scale(1);
+    font-weight: 100;
+    background: black;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  50% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  70% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+    font-weight: 900;
+    background: linear-gradient(#9356dc, #FF79DA);
+    opacity: 1;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
 .card, .stages-card {
   border-radius: 1.4em;
   margin-bottom: 1.3em;
