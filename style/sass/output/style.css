@@ -416,6 +416,14 @@ header .container .back-btn {
   width: 30px;
 }
 
+.menu:hover .menu-checkmark, .menu:active:hover .menu-checkmark {
+  width: 80px;
+}
+.menu:hover .menu-checkmark p, .menu:active:hover .menu-checkmark p {
+  transform: rotate(360deg);
+  transition: transform 400ms ease-in-out;
+}
+
 .menu {
   width: 100%;
   display: flex;
@@ -423,13 +431,7 @@ header .container .back-btn {
   cursor: pointer;
   overflow: hidden;
 }
-.menu:active .menu-checkmark {
-  width: 80px;
-}
-.menu:hover .menu-checkmark {
-  width: 80px;
-}
-.menu h3, .menu p {
+.menu-description h3, .menu-description p {
   width: 100%;
   white-space: nowrap;
   overflow: hidden;
@@ -452,11 +454,12 @@ header .container .back-btn {
 .menu-checkmark {
   display: flex;
   align-items: center;
-  text-align: center;
+  justify-content: center;
   width: 0px;
   border-radius: 0 1.4em 1.4em 0;
   background-color: #99E2D0;
   color: white;
+  transition: width 400ms ease-in-out;
   overflow: hidden;
 }
 .menu-checkmark p {

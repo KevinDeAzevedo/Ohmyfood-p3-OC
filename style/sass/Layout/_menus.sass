@@ -39,22 +39,28 @@
     border-bottom: 3px solid $tertiary-color
     width: 30px
 
+%checkmark-animation
+  width: 80px
+  p
+    transform: rotate(360deg)
+    transition: transform 400ms ease-in-out
+
 .menu
   width: 100%
   display: flex
   margin-bottom: 1em
   cursor: pointer
   overflow: hidden
-  &:active &-checkmark
-    width: 80px
+  &:active:hover &-checkmark
+    @extend %checkmark-animation
   &:hover &-checkmark
-    width: 80px
+    @extend %checkmark-animation
   &-description
-  h3,p
-    width: 100%
-    white-space: nowrap
-    overflow: hidden
-    text-overflow: ellipsis
+    h3,p
+      width: 100%
+      white-space: nowrap
+      overflow: hidden
+      text-overflow: ellipsis
   h3
     padding: 1em 0 0 1em
   p
@@ -68,11 +74,12 @@
   &-checkmark
     display: flex
     align-items: center
-    text-align: center
+    justify-content: center
     width: 0px
     border-radius: 0 1.4em 1.4em 0 
     background-color: $tertiary-color
     color: white
+    transition: width 400ms ease-in-out
     overflow: hidden
     p
       font-size: 1.6em
