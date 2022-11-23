@@ -1,5 +1,3 @@
-$heart-animation-duration: 500ms
-
 .heart-button
  max-height: 25px
  padding: 0
@@ -13,12 +11,12 @@ $heart-animation-duration: 500ms
   background: linear-gradient($primary-color, $secondary-color)
   background-clip: text
   -webkit-text-fill-color: transparent
-  animation: pop $heart-animation-duration ease-in-out
+  animation: pop $animation-duration ease-in-out
  & .fa-solid
   font-weight: 100
  &:hover .fa-solid
   font-weight: 900
-  animation: pop $heart-animation-duration ease-in-out
+  animation: pop $animation-duration ease-in-out
 
 @keyframes pop
  0%

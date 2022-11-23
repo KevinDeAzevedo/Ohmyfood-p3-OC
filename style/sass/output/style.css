@@ -98,6 +98,7 @@ a:visited {
 /* ------------------- Adapt font color with layout color ------------------- */
 /* ---------------------- Define each background color ---------------------- */
 /* ------------------------------- Responsive ------------------------------- */
+/* ------------------------------- Animations ------------------------------- */
 html {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -514,7 +515,7 @@ header .container .back-btn {
   border-radius: 0 1.4em 1.4em 0;
   background-color: #99E2D0;
   color: white;
-  transition: width 400ms ease-in-out;
+  transition: width 500ms ease-in-out;
   overflow: hidden;
 }
 .menu-checkmark p {
@@ -597,7 +598,7 @@ header .container .back-btn {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  transition: box-shadow 300ms;
+  transition: box-shadow 500ms;
   z-index: 1;
 }
 .button p {
@@ -623,7 +624,7 @@ header .container .back-btn {
   bottom: 0;
   background: linear-gradient(#FF79DA, #9356dc);
   opacity: 1;
-  transition: opacity 550ms;
+  transition: opacity 500ms;
   z-index: -1;
 }
 
