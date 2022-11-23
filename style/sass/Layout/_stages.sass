@@ -9,3 +9,30 @@
       gap: 1.5em
     li
       flex-grow: 1
+
+.stages-card
+  @extend .card
+  position: relative
+  display: flex
+  justify-content: flex-start
+  align-items: center
+  flex-direction: row
+  flex-wrap: wrap
+  padding: 1.8em
+  @media screen and (min-width: map-get($breakpoints, tablet))
+    justify-content: center
+  i
+    color: grey
+    margin-right: 1.5em
+
+.number
+  position: absolute
+  display: flex
+  justify-content: center
+  align-items: center
+  color: white
+  width: 25px
+  height: 25px
+  left: -10px
+  border-radius: 1em
+  background-color: $primary-color

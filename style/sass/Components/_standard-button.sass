@@ -1,4 +1,5 @@
 .button
+ position: relative
  display: inline-block
  width: 100%
  min-width: 100px
@@ -10,11 +11,13 @@
  margin: 0
  border-width: 0
  border-radius: 2em
- background: linear-gradient($secondary-color, $primary-color)
+ background: linear-gradient(lighten($secondary-color, 5), lighten($primary-color, 10))
  box-shadow: 0px 7px 10px rgb($shadow-color , 0.4)
  overflow: hidden
  white-space: nowrap
  text-overflow: ellipsis
+ transition: box-shadow 300ms
+ z-index: 1
  p
   color: white
   font-weight: 700
@@ -22,3 +25,18 @@
   overflow: hidden
   white-space: nowrap
   text-overflow: ellipsis
+ &:hover
+  box-shadow: 0px 7px 20px rgb($primary-color , 0.6)
+  &::before
+   opacity: 0
+ &::before
+  position: absolute
+  content: ''
+  top: 0
+  right: 0
+  left: 0
+  bottom: 0
+  background: linear-gradient($secondary-color, $primary-color)
+  opacity: 1
+  transition: opacity 550ms
+  z-index: -1

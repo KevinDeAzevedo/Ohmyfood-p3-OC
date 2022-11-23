@@ -3,35 +3,3 @@
  border-radius: 1.4em
  margin-bottom: 1.3em
  box-shadow: 0px 7px 10px rgb($shadow-color , 0.2)
-
-.stages-card
- @extend .card
- position: relative
- display: flex
- justify-content: flex-start
- align-items: center
- flex-direction: row
- flex-wrap: wrap
- padding: 1.8em
- background-color: darken(white, 5%)
- @media screen and (min-width: map-get($breakpoints, tablet))
-  justify-content: center
- i
-  color: grey
-  margin-right: 1.5em
- &.active
-  background-color: rgba($primary-color , 0.1)
-  i
-   color: $primary-color
- .number
-  position: absolute
-  display: flex
-  justify-content: center
-  align-items: center
-  color: white
-  width: 25px
-  height: 25px
-  left: -10px
-  border-radius: 1em
-  background-color: $primary-color
-
