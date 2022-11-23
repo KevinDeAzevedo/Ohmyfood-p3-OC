@@ -303,6 +303,12 @@ header .container .back-btn {
   color: grey;
   margin-right: 1.5em;
 }
+.stages-card:hover i {
+  color: #9356dc;
+}
+.stages-card:hover::before {
+  opacity: 1;
+}
 .stages-card::before {
   position: absolute;
   content: "";
@@ -312,6 +318,7 @@ header .container .back-btn {
   bottom: 0;
   background-color: #f2eafb;
   opacity: 0;
+  transition: opacity 500ms;
   border-radius: 1.5em;
   z-index: -1;
 }
