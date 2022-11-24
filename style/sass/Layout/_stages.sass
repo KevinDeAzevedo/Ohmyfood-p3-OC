@@ -1,3 +1,7 @@
+$num-bars: 5
+$anim-dur: 3000ms
+$anim-delay: $anim-dur / $num-bars
+
 .stages
   padding: 1.8em 2em
   ul
@@ -21,26 +25,24 @@
   padding: 1.8em
   background-color: $layout-color
   z-index: 1
+  animation: fade-in-out $anim-dur backwards infinite
+  @for $i from 1 through $num-bars
+    &--#{$i}
+      animation-delay: $anim-delay * $i
   @media screen and (min-width: map-get($breakpoints, tablet))
     justify-content: center
   i
     color: grey
     margin-right: 1.5em
-  &:hover
-    i
-      color: $primary-color
-    &::before
-      opacity: 1
-  &::before
-    position: absolute
-    content: ''
-    inset: 0
-    background-color: lighten($primary-color, 35)
-    opacity: 0
-    transition: opacity $animation-duration
-    border-radius: 1.5em 
-    z-index: -1
 
+
+@keyframes fade-in-out
+  0%
+    background-color: $layout-color 
+  50%
+    background-color: lighten($primary-color, 25)
+  100%
+    background-color: $layout-color
 
 .number
   position: absolute

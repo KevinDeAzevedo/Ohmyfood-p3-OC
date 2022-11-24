@@ -294,6 +294,22 @@ header .container .back-btn {
   padding: 1.8em;
   background-color: #f5f5f5;
   z-index: 1;
+  animation: fade-in-out 3000ms backwards infinite;
+}
+.stages-card--1 {
+  animation-delay: 600ms;
+}
+.stages-card--2 {
+  animation-delay: 1200ms;
+}
+.stages-card--3 {
+  animation-delay: 1800ms;
+}
+.stages-card--4 {
+  animation-delay: 2400ms;
+}
+.stages-card--5 {
+  animation-delay: 3000ms;
 }
 @media screen and (min-width: 768px) {
   .stages-card {
@@ -304,23 +320,18 @@ header .container .back-btn {
   color: grey;
   margin-right: 1.5em;
 }
-.stages-card:hover i {
-  color: #9356dc;
-}
-.stages-card:hover::before {
-  opacity: 1;
-}
-.stages-card::before {
-  position: absolute;
-  content: "";
-  inset: 0;
-  background-color: #f2eafb;
-  opacity: 0;
-  transition: opacity 500ms;
-  border-radius: 1.5em;
-  z-index: -1;
-}
 
+@keyframes fade-in-out {
+  0% {
+    background-color: #f5f5f5;
+  }
+  50% {
+    background-color: #d7c0f2;
+  }
+  100% {
+    background-color: #f5f5f5;
+  }
+}
 .number {
   position: absolute;
   display: flex;
