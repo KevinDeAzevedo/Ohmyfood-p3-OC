@@ -488,6 +488,35 @@ header .container .back-btn {
   margin-bottom: 1em;
   cursor: pointer;
   overflow: hidden;
+  opacity: 0;
+  animation: fade-in-translate 2000ms forwards;
+}
+.menu--1 {
+  animation-delay: 222.2222222222ms;
+}
+.menu--2 {
+  animation-delay: 444.4444444444ms;
+}
+.menu--3 {
+  animation-delay: 666.6666666667ms;
+}
+.menu--4 {
+  animation-delay: 888.8888888889ms;
+}
+.menu--5 {
+  animation-delay: 1111.1111111111ms;
+}
+.menu--6 {
+  animation-delay: 1333.3333333333ms;
+}
+.menu--7 {
+  animation-delay: 1555.5555555556ms;
+}
+.menu--8 {
+  animation-delay: 1777.7777777778ms;
+}
+.menu--9 {
+  animation-delay: 2000ms;
 }
 .menu-description h3, .menu-description p {
   width: 100%;
@@ -526,6 +555,16 @@ header .container .back-btn {
   transform: rotate(0deg);
 }
 
+@keyframes fade-in-translate {
+  0% {
+    opacity: 0;
+    transform: translateY(15%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .crop {
   width: 100%;
   white-space: nowrap;

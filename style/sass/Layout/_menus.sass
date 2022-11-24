@@ -52,6 +52,11 @@
   margin-bottom: 1em
   cursor: pointer
   overflow: hidden
+  opacity: 0
+  animation: fade-in-translate $animation-menus-duration forwards
+  @for $i from 1 through $num-menus
+    &--#{$i}
+      animation-delay: $anim-menus-delay * $i
   &:active:hover &-checkmark
     @extend %checkmark-animation
   &:hover &-checkmark
@@ -86,6 +91,14 @@
       font-size: 1.6em
       padding: 0
       transform: rotate(0deg)
+
+@keyframes fade-in-translate
+  0%
+    opacity: 0
+    transform: translateY(15%)
+  100%
+    opacity: 1
+    transform: translateY(0)
 
 .crop
   width: 100%
