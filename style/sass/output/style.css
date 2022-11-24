@@ -313,10 +313,7 @@ header .container .back-btn {
 .stages-card::before {
   position: absolute;
   content: "";
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
   background-color: #f2eafb;
   opacity: 0;
   transition: opacity 500ms;
@@ -618,10 +615,7 @@ header .container .back-btn {
 .button::before {
   position: absolute;
   content: "";
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
+  inset: 0;
   background: linear-gradient(#FF79DA, #9356dc);
   opacity: 1;
   transition: opacity 500ms;
