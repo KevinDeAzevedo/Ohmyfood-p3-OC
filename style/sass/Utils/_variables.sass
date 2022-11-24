@@ -1,7 +1,10 @@
 /* --------------------------------- Colors --------------------------------- */
-$primary-color: #9356dc
+$primary-color: #9356DC
+/* default 9356DC */
 $secondary-color: #FF79DA
+/* default FF79DA */
 $tertiary-color: #99E2D0
+/* default 99E2D0 */
 $layout-color: #f5f5f5
 /* default f5f5f5 */
 $shadow-color: #4a4a4a
@@ -32,6 +35,14 @@ $shadow-color: #4a4a4a
 
 @mixin grey-four-background-color($color: $layout-color)
   @include computed-layout-color($percent: 70%)
+
+/* ------------------------- Define text label color ------------------------ */
+
+@mixin text-label-color($color: $tertiary-color)
+  @if lightness($color) > 70%
+    color: darken($tertiary-color, 50)
+  @else 
+    color: lighten($tertiary-color, 50)
 
 /* ------------------------------- Responsive ------------------------------- */
 $breakpoints: (tablet: 768px, laptop: 990px)
