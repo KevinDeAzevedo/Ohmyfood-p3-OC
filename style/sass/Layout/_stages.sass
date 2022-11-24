@@ -1,6 +1,5 @@
-$num-bars: 5
-$anim-dur: 3000ms
-$anim-delay: $anim-dur / $num-bars
+$num-bars: 3
+$anim-delay: $animation-stages-duration / $num-bars
 
 .stages
   padding: 1.8em 2em
@@ -25,22 +24,21 @@ $anim-delay: $anim-dur / $num-bars
   padding: 1.8em
   background-color: $layout-color
   z-index: 1
-  animation: fade-in-out $anim-dur backwards infinite
+  animation: fade-in-out $animation-stages-duration forwards infinite
   @for $i from 1 through $num-bars
     &--#{$i}
       animation-delay: $anim-delay * $i
   @media screen and (min-width: map-get($breakpoints, tablet))
     justify-content: center
   i
-    color: grey
     margin-right: 1.5em
-
 
 @keyframes fade-in-out
   0%
     background-color: $layout-color 
   50%
     background-color: lighten($primary-color, 25)
+    color: $primary-color
   100%
     background-color: $layout-color
 
