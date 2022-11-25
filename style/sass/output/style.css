@@ -419,8 +419,7 @@ header .container .back-btn {
   height: auto;
   padding-top: 0.2em;
 }
-
-.heart-button {
+.restaurant-card .heart-button {
   position: absolute;
   z-index: 2;
   top: 230px;
