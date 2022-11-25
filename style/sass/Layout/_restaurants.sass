@@ -16,6 +16,7 @@
       justify-content: space-between
 
 .restaurant-card
+  position: relative
   display: flex
   flex-direction: column
   width: 100%
@@ -50,8 +51,12 @@
     height: 100%
     padding: 1.2em
     &-description
-      width: 100%
+      width: 80%
       height: auto
       padding-top: 0.2em
-    &-heart
-      padding: 1em
+
+.heart-button
+  position: absolute
+  z-index: 2
+  top: 230px
+  right: 20px

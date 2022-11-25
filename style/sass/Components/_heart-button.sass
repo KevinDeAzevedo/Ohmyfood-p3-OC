@@ -1,42 +1,47 @@
 .heart-button
- max-height: 25px
- padding: 0
- font-size: 1.3em
- border: 0
- background: black
- background-clip: text
- -webkit-text-fill-color: transparent
- cursor: pointer
- &:hover
-  background: linear-gradient($primary-color, $secondary-color)
-  background-clip: text
-  -webkit-text-fill-color: transparent
-  animation: pop $animation-duration ease-in-out
- & .fa-solid
-  font-weight: 100
- &:hover .fa-solid
-  font-weight: 900
-  animation: pop $animation-duration ease-in-out
-
-@keyframes pop
- 0%
-  transform: scale(1)
-  font-weight: 100
+  max-height: 25px
+  padding: 0
+  font-size: 1.3em
+  border: 0
   background: black
   background-clip: text
   -webkit-text-fill-color: transparent
+  cursor: pointer
+  &:focus, &:hover
+    background: linear-gradient($primary-color, $secondary-color)
+    background-clip: text
+    -webkit-text-fill-color: transparent
+    animation: pop $animation-duration ease-in-out
+  & .fa-solid
+    font-weight: 100
+    margin: 1px
+  %focus-hover-weight-font
+    font-weight: 900
+    animation: pop $animation-duration ease-in-out
+  &:focus .fa-solid
+    @extend %focus-hover-weight-font
+  &:hover .fa-solid
+    @extend %focus-hover-weight-font
 
- 50%
-  transform: scale(0.8)
-  opacity: 0
+@keyframes pop
+  0%
+    transform: scale(1)
+    font-weight: 100
+    background: black
+    background-clip: text
+    -webkit-text-fill-color: transparent
 
- 70%
-  transform: scale(1.2)
+  50%
+    transform: scale(0.8)
+    opacity: 0
 
- 100%
-  transform: scale(1)
-  font-weight: 900
-  background: linear-gradient($primary-color, $secondary-color)
-  opacity: 1
-  background-clip: text
-  -webkit-text-fill-color: transparent
+  70%
+    transform: scale(1.2)
+
+  100%
+    transform: scale(1)
+    font-weight: 900
+    background: linear-gradient($primary-color, $secondary-color)
+    opacity: 1
+    background-clip: text
+    -webkit-text-fill-color: transparent

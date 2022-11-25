@@ -369,6 +369,7 @@ header .container .back-btn {
 }
 
 .restaurant-card {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -414,12 +415,16 @@ header .container .back-btn {
   padding: 1.2em;
 }
 .restaurant-card-content-description {
-  width: 100%;
+  width: 80%;
   height: auto;
   padding-top: 0.2em;
 }
-.restaurant-card-content-heart {
-  padding: 1em;
+
+.heart-button {
+  position: absolute;
+  z-index: 2;
+  top: 230px;
+  right: 20px;
 }
 
 .banner {
@@ -680,7 +685,7 @@ header .container .back-btn {
   -webkit-text-fill-color: transparent;
   cursor: pointer;
 }
-.heart-button:hover {
+.heart-button:focus, .heart-button:hover {
   background: linear-gradient(#9356DC, #FF79DA);
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -688,12 +693,12 @@ header .container .back-btn {
 }
 .heart-button .fa-solid {
   font-weight: 100;
+  margin: 1px;
 }
-.heart-button:hover .fa-solid {
+.heart-button:hover .fa-solid, .heart-button:focus .fa-solid {
   font-weight: 900;
   animation: pop 500ms ease-in-out;
 }
-
 @keyframes pop {
   0% {
     transform: scale(1);
