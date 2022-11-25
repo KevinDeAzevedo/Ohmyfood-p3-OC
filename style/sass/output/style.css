@@ -481,10 +481,10 @@ header .container .back-btn {
   width: 30px;
 }
 
-.menu:hover .menu-checkmark, .menu:active:hover .menu-checkmark {
+.menu:hover .menu-checkmark, .menu:focus .menu-checkmark {
   width: 80px;
 }
-.menu:hover .menu-checkmark p, .menu:active:hover .menu-checkmark p {
+.menu:hover .menu-checkmark p, .menu:focus .menu-checkmark p {
   transform: rotate(360deg);
   transition: transform 400ms ease-in-out;
 }

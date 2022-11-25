@@ -57,7 +57,7 @@
   @for $i from 1 through $num-menus
     &--#{$i}
       animation-delay: $anim-menus-delay * $i
-  &:active:hover &-checkmark
+  &:focus &-checkmark
     @extend %checkmark-animation
   &:hover &-checkmark
     @extend %checkmark-animation
