@@ -461,7 +461,7 @@ header .container .back-btn {
 }
 @media screen and (min-width: 768px) {
   .menu-container {
-    padding: 1em 2em;
+    padding: 1em 4em;
   }
 }
 .menu-container .button {
@@ -475,20 +475,14 @@ header .container .back-btn {
   justify-content: space-between;
   padding-right: 2em;
 }
-
-.menu-listing {
-  width: 100%;
-}
-@media screen and (min-width: 768px) {
-  .menu-listing {
-    margin: auto;
-    width: 80%;
-  }
-}
-.menu-listing h2 {
+.menu-container h2 {
   padding-bottom: 0.4em;
   border-bottom: 3px solid #99E2D0;
   width: 30px;
+}
+
+.menu-listing {
+  width: 100%;
 }
 
 .menu:hover .menu-checkmark, .menu:focus .menu-checkmark {

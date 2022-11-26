@@ -18,7 +18,7 @@
   flex-direction: column
   @include grey-two-background-color
   @media screen and (min-width: map-get($breakpoints, tablet))
-    padding: 1em 2em
+    padding: 1em 4em
   & .button
     align-self: center
     max-width: 300px
@@ -28,16 +28,13 @@
     align-items: center
     justify-content: space-between
     padding-right: 2em 
-
-.menu-listing
-  width: 100%
-  @media screen and (min-width: map-get($breakpoints, tablet))
-    margin: auto
-    width: 80%
   h2
     padding-bottom: 0.4em
     border-bottom: 3px solid $tertiary-color
     width: 30px
+
+.menu-listing
+  width: 100%
 
 %checkmark-animation
   width: 80px
