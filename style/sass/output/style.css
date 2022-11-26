@@ -143,6 +143,13 @@ h3 {
   margin: 0 0 0.3em 0;
 }
 
+h4 {
+  font-size: 1.06em;
+  line-height: 1.2em;
+  font-weight: 700;
+  margin: 0;
+}
+
 p {
   font-size: 1.06em;
   line-height: 1.2em;

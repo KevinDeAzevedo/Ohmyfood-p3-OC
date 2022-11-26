@@ -1,39 +1,39 @@
 .button
- position: relative
- display: inline-block
- width: 100%
- min-width: 100px
- color: white
- font-weight: 700
- text-align: center
- font-size: 1em
- padding: 1em 1.5em
- margin: 0
- border-width: 0
- border-radius: 2em
- background: linear-gradient(lighten($secondary-color, 5), lighten($primary-color, 10))
- box-shadow: 0px 7px 10px rgb($shadow-color , 0.4)
- overflow: hidden
- white-space: nowrap
- text-overflow: ellipsis
- transition: box-shadow $animation-duration
- z-index: 1
- p
+  position: relative
+  display: inline-block
+  width: 100%
+  min-width: 100px
   color: white
   font-weight: 700
+  text-align: center
+  font-size: 1em
+  padding: 1em 1.5em
   margin: 0
+  border-width: 0
+  border-radius: 2em
+  background: linear-gradient(lighten($secondary-color, 5), lighten($primary-color, 10))
+  box-shadow: 0px 7px 10px rgb($shadow-color , 0.4)
   overflow: hidden
   white-space: nowrap
   text-overflow: ellipsis
- &:hover
-  box-shadow: 0px 7px 20px rgb($primary-color , 0.6)
+  transition: box-shadow $animation-duration
+  z-index: 1
+  p
+    color: white
+    font-weight: 700
+    margin: 0
+    overflow: hidden
+    white-space: nowrap
+    text-overflow: ellipsis
+  &:hover
+    box-shadow: 0px 7px 20px rgb($primary-color , 0.6)
+    &::before
+      opacity: 0
   &::before
-   opacity: 0
- &::before
-  position: absolute
-  content: ''
-  inset: 0
-  background: linear-gradient($secondary-color, $primary-color)
-  opacity: 1
-  transition: opacity $animation-duration
-  z-index: -1
+    position: absolute
+    content: ''
+    inset: 0
+    background: linear-gradient($secondary-color, $primary-color)
+    opacity: 1
+    transition: opacity $animation-duration
+    z-index: -1
