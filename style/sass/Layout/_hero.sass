@@ -1,26 +1,28 @@
 .hero
- margin: auto
- padding-top: 60px
- max-width: 1400px
- @include grey-two-background-color
- @media screen and (min-width: map-get($breakpoints, tablet))
-  border-radius: 0 0 2em 2em
+  margin: auto
+  padding-top: 60px
+  max-width: 1400px
+  @include grey-two-background-color
+  @media screen and (min-width: map-get($breakpoints, tablet))
+    border-radius: 0 0 2em 2em
 
 .hero-ribon
- margin: auto
- width: 100%
- padding: 1em
- text-align: center
- @include grey-three-background-color
- @media screen and (min-width: map-get($breakpoints, tablet))
-  width: 50%
-  border-radius: 0 0 1em 1em
+  margin: auto
+  width: 100%
+  padding: 1em
+  text-align: center
+  @include grey-three-background-color
+  @media screen and (min-width: map-get($breakpoints, tablet))
+    width: 50%
+    border-radius: 0 0 1em 1em
+  & .fa-solid
+    margin-right: 1em
 
 .hero-banner
- text-align: center
- padding: 1.5em 2em 3.5em 2em
- & .button
-  max-width: 300px
-  margin-top: 1.5em
- h1,p
-  margin: 0.8em 0
+  text-align: center
+  padding: 1.5em 2em 3.5em 2em
+  & .button
+    max-width: 300px
+    margin-top: 1.5em
+  h1,p
+    margin: 0.8em 0

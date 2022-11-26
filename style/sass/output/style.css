@@ -257,6 +257,9 @@ header .container .back-btn {
     border-radius: 0 0 1em 1em;
   }
 }
+.hero-ribon .fa-solid {
+  margin-right: 1em;
+}
 
 .hero-banner {
   text-align: center;
