@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap");
 body {
@@ -176,28 +175,6 @@ p.text--grey {
 
 .hidden {
   display: none;
-}
-
-/* ---------------------------- Test à supprimer ---------------------------- */
-.box, .four, .three, .two, .one {
-  width: 100%;
-  height: 50px;
-}
-
-.one {
-  background-color: white;
-}
-
-.two {
-  background-color: whitesmoke;
-}
-
-.three {
-  background-color: #e8e8e8;
-}
-
-.four {
-  background-color: #434343;
 }
 
 header {
