@@ -473,7 +473,6 @@ header .container .back-btn {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-right: 2em;
 }
 .menu-container h2 {
   padding-bottom: 0.4em;
