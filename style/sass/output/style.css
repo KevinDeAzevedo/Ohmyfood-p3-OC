@@ -385,6 +385,7 @@ header .container .back-btn {
   width: 100%;
   height: auto;
   background-color: white;
+  overflow: hidden;
 }
 @media screen and (min-width: 768px) {
   .restaurant-card {
