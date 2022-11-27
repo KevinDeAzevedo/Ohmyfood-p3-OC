@@ -17,7 +17,7 @@ $shadow-color: #4a4a4a
     background-color: darken($color, $percent)
 
 /* ------------------- Adapt font color with layout color ------------------- */
-@mixin overlay-characters-color($color: $layout-color)
+@mixin contrasted($color: $layout-color)
   @if lightness($color) > 50%
     color: darken($color, 70%)
   @else
@@ -32,9 +32,6 @@ $shadow-color: #4a4a4a
 
 @mixin grey-three-background-color($color: $layout-color)
   @include computed-layout-color($percent: 5%)
-
-@mixin grey-four-background-color($color: $layout-color)
-  @include computed-layout-color($percent: 70%)
 
 /* ------------------------- Define text label color ------------------------ */
 
