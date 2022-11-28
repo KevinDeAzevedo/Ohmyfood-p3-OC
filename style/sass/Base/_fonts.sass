@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Shrikhand&display=swap')
 
 html
   font-family: 'Roboto', Helvetica, Arial, sans-serif
@@ -10,27 +10,27 @@ html
 h1
   font-size: 1.5em
   line-height: 1.1em
-  font-weight: 700
+  font-weight: nth($list-font-weight, 2)
   margin: 0.8em 0
 
 h2
   font-size: 1.5em
   line-height: 1.1em
-  font-weight: 700
+  font-weight: nth($list-font-weight, 2)
   margin: 0.8em 0
 
 h3
   font-size: 1.2em
   line-height: 1.1em
-  font-weight: 700
+  font-weight: nth($list-font-weight, 2)
   margin: 0 0 0.3em 0
 
 p
   font-size: 1.06em
   line-height: 1.2em
-  font-weight: 300
+  font-weight: nth($list-font-weight, 1)
   &.text--bold
-    font-weight: 700
+    font-weight: nth($list-font-weight, 2)
   &.text--grey
     @include contrasted
 
@@ -41,4 +41,4 @@ p
 .uppercased
   text-transform: uppercase
   font-size: 1.06em
-  font-weight: 300
+  font-weight: nth($list-font-weight, 1)
